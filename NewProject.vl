@@ -62,7 +62,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="FnxfoHrgwJEODDcjLyfTCN" Location="VL.Stride" Version="2025.7.0-0415-g1ba28312cd" />
-  <NugetDependency Id="L8jxa4EH8uzQcaKvYPaKP1" Location="VL.Fuse" Version="1.0.3-beta06" />
   <NugetDependency Id="Hy0cIsqTyMIMRRFn3Siugo" Location="VL.Stride.TextureFX" Version="2025.7.0-0415-g1ba28312cd" />
   <DocumentDependency Id="LVPgvIIohb9LYusHLAFdfY" Location="./vl/NewProject.State.vl" />
   <DocumentDependency Id="DPU1r90D24SOPRn98BEPOd" Location="./vl/NewProject.Output.vl" />
