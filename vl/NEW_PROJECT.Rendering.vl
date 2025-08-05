@@ -66,7 +66,7 @@
             </Node>
             <ControlPoint Id="HpTZIOhrKXcMaXkGkKpR2c" Bounds="143,108" />
             <Node Bounds="141,129,76,26" Id="NqN6vL7NT24NwsflMYUnW5">
-              <p:NodeReference LastCategoryFullName="Main.State" LastDependency="NewProject.State.vl">
+              <p:NodeReference LastCategoryFullName="Main.State" LastDependency="NEW_PROJECT.State.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="State" />
                 <Choice Kind="OperationCallFlag" Name="ExampleView" />
@@ -173,5 +173,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="C238UCCLbaDMAJIdWPmBDp" Location="VL.Stride" Version="2025.7.0-0415-g1ba28312cd" />
-  <DocumentDependency Id="AZkaj9E4flwL86NCmk8rzW" Location="./NewProject.State.vl" />
+  <DocumentDependency Id="AZkaj9E4flwL86NCmk8rzW" Location="./NEW_PROJECT.State.vl" />
 </Document>

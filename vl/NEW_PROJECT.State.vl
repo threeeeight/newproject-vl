@@ -54,7 +54,7 @@
           <Canvas Id="GZS6d34zpJwLugbbUeI86R" CanvasType="Group">
             <ControlPoint Id="U2leI0DNQkNNB0nz4qhNPK" Bounds="144,159" />
             <Node Bounds="142,200,76,26" Id="OqFfGrBcaIfOxybfNuw1nv">
-              <p:NodeReference LastCategoryFullName="Main.State" LastDependency="NewProject.State.vl">
+              <p:NodeReference LastCategoryFullName="Main.State" LastDependency="NEW_PROJECT.State.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <CategoryReference Kind="ClassType" Name="State" />
                 <Choice Kind="OperationCallFlag" Name="ExampleView" />
@@ -73,7 +73,7 @@
               <Pin Id="Paz6Mq1Dw8OPIgJDkWPdGm" Name="Result" Kind="OutputPin" />
             </Node>
             <Node Bounds="142,619,90,26" Id="OhRtEyTxtPIPClVmLSKvur">
-              <p:NodeReference LastCategoryFullName="Main.State" LastDependency="NewProject.State.vl">
+              <p:NodeReference LastCategoryFullName="Main.State" LastDependency="NEW_PROJECT.State.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="SetExampleView" />
               </p:NodeReference>

@@ -2,7 +2,7 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="Kn3STsUCvlpNbOiH9OKv0R" LanguageVersion="2025.7.0-0415-g1ba28312cd" Version="0.128">
   <NugetDependency Id="PYQQNcS8ikHNVz8r8KzFHr" Location="VL.CoreLib" Version="2025.7.0-0415-g1ba28312cd" />
   <Patch Id="JOYPqSLjUbbObQZVpyD9ms">
-    <Canvas Id="RHn64ORETgONjqTH2Nyglj" DefaultCategory="DataSoil.Utils" CanvasType="FullCategory">
+    <Canvas Id="RHn64ORETgONjqTH2Nyglj" DefaultCategory="NEW_PROJECT.Utils" CanvasType="FullCategory">
       <!--
 
     ************************ AddOne ************************

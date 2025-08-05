@@ -2,7 +2,7 @@
 <Document xmlns:p="property" xmlns:r="reflection" Id="F1oyEJuJA5ALM4KxE9l38f" LanguageVersion="2025.7.0-0415-g1ba28312cd" Version="0.128">
   <NugetDependency Id="E9YyjPDTOTENJLknfctmiG" Location="VL.CoreLib" Version="2025.7.0-0415-g1ba28312cd" />
   <Patch Id="TSRS44SQk6OQJ5ZK6Ldmfm">
-    <Canvas Id="TozkvmQNMvlMMvlJ2chRY7" DefaultCategory="DataSoil" CanvasType="FullCategory" />
+    <Canvas Id="TozkvmQNMvlMMvlJ2chRY7" DefaultCategory="NEW_PROJECT" CanvasType="FullCategory" />
     <!--
 
     ************************ Application ************************
@@ -16,7 +16,7 @@
       <Patch Id="DlVDY2HkPYpQak0Z64UfyB">
         <Canvas Id="QSMMNsjNr6BLuw93aesraB" CanvasType="Group">
           <Node Bounds="126,390,84,19" Id="BDoltsaAjgaPLsRzPgImFF">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="DataSoil.Rendering.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="NEW_PROJECT.Rendering.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="RenderContent" />
             </p:NodeReference>
@@ -25,7 +25,7 @@
             <Pin Id="PGrr8N6cvxTNowN6yhREZg" Name="State" Kind="InputPin" />
           </Node>
           <Node Bounds="126,540,48,19" Id="SY6icgVRMaJMntAV9hI8W8">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="DataSoil.Output.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="NEW_PROJECT.Output.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Output" />
             </p:NodeReference>
@@ -33,7 +33,7 @@
             <Pin Id="DR9wZBlGoWQN3h2FbIXHbF" Name="Entities" Kind="InputPin" />
           </Node>
           <Node Bounds="126,250,39,19" Id="UPlY1n9ZjicNr8tgFOrB3m">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="DataSoil.AppState.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="NEW_PROJECT.AppState.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="State" />
             </p:NodeReference>
@@ -41,7 +41,7 @@
             <Pin Id="JAbaTjUgvxQNwSIzs8WXPU" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
           <Node Bounds="254,331,84,19" Id="TnTs0o3xvGzMxsHCrRy7Cm">
-            <p:NodeReference LastCategoryFullName="Main" LastDependency="NewProject.State.vl">
+            <p:NodeReference LastCategoryFullName="Main" LastDependency="NEW_PROJECT.State.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StateController" />
             </p:NodeReference>
@@ -63,8 +63,8 @@
   </Patch>
   <NugetDependency Id="FnxfoHrgwJEODDcjLyfTCN" Location="VL.Stride" Version="2025.7.0-0415-g1ba28312cd" />
   <NugetDependency Id="Hy0cIsqTyMIMRRFn3Siugo" Location="VL.Stride.TextureFX" Version="2025.7.0-0415-g1ba28312cd" />
-  <DocumentDependency Id="LVPgvIIohb9LYusHLAFdfY" Location="./vl/NewProject.State.vl" />
-  <DocumentDependency Id="DPU1r90D24SOPRn98BEPOd" Location="./vl/NewProject.Output.vl" />
-  <DocumentDependency Id="RpPyONv03RbPEMCuIB1jqv" Location="./vl/NewProject.Rendering.vl" />
-  <DocumentDependency Id="Tjb4C0Wc81FPSdy9tNJ4Cc" Location="./vl/NewProject.Utils.vl" />
+  <DocumentDependency Id="LVPgvIIohb9LYusHLAFdfY" Location="./vl/NEW_PROJECT.State.vl" />
+  <DocumentDependency Id="DPU1r90D24SOPRn98BEPOd" Location="./vl/NEW_PROJECT.Output.vl" />
+  <DocumentDependency Id="RpPyONv03RbPEMCuIB1jqv" Location="./vl/NEW_PROJECT.Rendering.vl" />
+  <DocumentDependency Id="Tjb4C0Wc81FPSdy9tNJ4Cc" Location="./vl/NEW_PROJECT.Utils.vl" />
 </Document>
