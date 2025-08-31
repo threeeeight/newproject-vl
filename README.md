@@ -1,1 +1,1 @@
-# NEW_PROJECT-vl
+# Template for a new VL project
