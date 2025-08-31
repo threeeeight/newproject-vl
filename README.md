@@ -1,4 +1,4 @@
-# 3e8 VL Template
+# VL template for 3e8 projects
 
 **Used vvvv version**</br>
 vvvv gamma 7.0
