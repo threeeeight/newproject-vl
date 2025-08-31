@@ -1,1 +1,0 @@
-# Template for a new VL project
