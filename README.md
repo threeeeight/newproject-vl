@@ -1,13 +1,10 @@
-# New VL Project Template
-
-**vvvv version**: vvvv gamma 7.0<br>
-**Other pre-requisites**: None
+# New VL Project
 
 ## Structure
 
 Every project contains a main VL file `NewProject.vl` and the main entry point `NewProject.bat`.
 
-The batch file will set up the whole VL environment specifically for the project, including the right vvvv version and the NuGet path inside of the project, and eventually open `NewProject.vl`. Therefore it is the file that should be opened everytime one is working on the project. 
+The batch file will set up the environment in vvvv specifically for the project, including the right vvvv version and the NuGet path inside of the project, and eventually open `NewProject.vl`. Therefore it is the file that should be opened everytime one is working on the project. 
 
 Doing so, vvvv will make sure that NuGets are always loaded from the project repository. Loading and storing them within the scope of a project from this folder will make sure that everybody working on the project uses the same NuGets and their versions.
 
@@ -34,7 +31,7 @@ https://thegraybook.vvvv.org/reference/best-practice/version-control.html#versio
 
 ### Using Package Repositores
 
-In case your project needs to use one of our libraries from source or a custom fork of a VL library (often the case when using VL.Fuse in a project), please add them to a folder called `package-repositories` inside of your project and include it in the batch file. Don’t forget to add the libraries to the `--editable-packages` flag, otherwise they will be pre-compiled in your project.
+In case your project needs to use a VL library from source (often the case when using a fork of VL.Fuse in a project), please add them to a folder called `package-repositories` inside of your project and include it in the batch file. Don’t forget to add the libraries to the `--editable-packages` flag, otherwise they will be pre-compiled in your project.
 
 ```jsx
 taskkill /f /im vvvv.exe
