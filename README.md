@@ -12,7 +12,7 @@ If the specific vvvv version can not be found on your computer, you need to down
 
 The template also contains some standard folders `assets` `nugets` `rnd` `vl` and an empty placeholder file inside of each if it is empty, so that it gets picked up by Git. The placeholder file can be safely deleted, also the folder itself if it is not to be used within the project.
 
-- `assets` should contain any files like images, videos, fonts that will be picked up and used by the VL application, and are not managed by an external asset provider. Please try to avoid huge files above 100MB, as this is the maximum file size in Git repositories. Files should be organized by their type, so feel free to create sub folders like `images` `videos` `fonts`.
+- `assets` should contain any files like images, videos, fonts that will be picked up and used by the VL application, and are not managed by an external asset provider. You might consider to organize assets by their type, so feel free to create sub folders like `images` `videos` `fonts`.
 - `nugets` is the place where all NuGet dependencies will be saved and that is specified as the NuGet override folder in the batch file.
 - `rnd` should be used to save research and tests patches that were developed in the scope of a project and/or showcase several possible solutions, but are not part of the project itself. Just make sure that these files are also opened in the same version and that they are using the custom NuGet folder as the rest of the project.
 - `vl` contains VL file dependencies that are referenced and used by the project.
@@ -23,7 +23,7 @@ After creating a new repository based on this template, you need to manually cha
 
 ### VL File Dependencies
 
-When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency. In our projects they are stored within the `vl` folder.
+When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency.
 
 It is generally good practice to only store definitions like classes, records and process nodes inside file dependencies and not in the main VL file. The main VL file on the other hand does only call these operations on the application side, but does not store any definitions itself. Like that, we ensure modularity and exchangeability, and also open up for other contributors to projects. 
 
