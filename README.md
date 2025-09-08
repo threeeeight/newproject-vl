@@ -11,7 +11,7 @@ The batch file will set up the environment in vvvv specifically for the project,
 
 Doing so, vvvv will make sure that NuGets are always loaded from the project repository. Loading and storing them within the scope of a project from this folder will make sure that everybody working on the project uses the same NuGets and their versions.
 
-If the specific vvvv version can not be found on your computer, you need to download and install it manually ([Installing specific vvvv versions](https://www.notion.so/Installing-specific-vvvv-versions-25dffcf9f77580a0ba1bec3a0b7ef996?pvs=21)). Feel free to change the vvvv version in the batch file, if the project requires a different version. Just make sure that everybody working on the project is informed about this step and downloads the right version of vvvv.
+If the specific vvvv version can not be found on your computer, you need to download and install it manually. Feel free to change the vvvv version in the batch file, if the project requires a different version. Just make sure that everybody working on the project is informed about this step and downloads the right version of vvvv.
 
 ## Structure
 
