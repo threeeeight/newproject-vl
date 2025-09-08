@@ -1,4 +1,4 @@
-# New VL Project
+# VL Project Template
 
 A template for VL projects, using a batch file opening a specific vvvv and NuGet environment.
 Set up for more complex and scalable projects with multiple collaborators.
