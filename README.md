@@ -29,9 +29,11 @@ It is generally good practice to only store definitions like classes, records an
 
 https://thegraybook.vvvv.org/reference/best-practice/version-control.html#version-control-with-git
 
-### Using Package Repositores
+## Advanced techniques 
 
-In case your project needs to use a VL library from source (often the case when using a fork of VL.Fuse in a project), please add them to a folder called `package-repositories` inside of your project and include it in the batch file. Don’t forget to add the libraries to the `--editable-packages` flag, otherwise they will be pre-compiled in your project.
+### Package Repositores / Git Submodules
+
+In case your project needs to use a VL library from source (often the case when using a fork of VL.Fuse in a project), please add them to a folder called `package-repositories` inside of your project and include it in the batch file. Don’t forget to add the libraries to the `--editable-packages` flag, otherwise they will be pre-compiled in your project. Afterwards use a Git client that supports submodules.
 
 ```jsx
 taskkill /f /im vvvv.exe
