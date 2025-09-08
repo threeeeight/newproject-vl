@@ -22,27 +22,15 @@ The template also contains some standard folders `assets` `nugets` `rnd` `vl` an
 
 ### Setting up a new VL project
 
-To use the template, simply create a new repository by selecting the template in the creation process.
-
-![grafik.png](attachment:086fcd4c-f7e9-46be-8d7d-6a62c89282cb:grafik.png)
-
-Alternatively, you can also create the repository from the template repository by clicking on “Use this template”.
-
-![grafik.png](attachment:4fd9f12f-2d8b-4b15-97d0-87da77e5264d:grafik.png)
-
-**IMPORTANT:** After creating and cloning the repository to your machine, you need to manually change the name of both the main VL file and the batch file to the name of the project. Also make sure to change the name of the main entry file inside of the batch file!
+After creating a new repository based on this template, you need to manually change the name of both the main VL file and the batch file to the name of the project. Also make sure to change the name of the main entry file inside of the batch file!
 
 ### VL File Dependencies
 
-When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency. In our projects they are stored within the `vl` folder (sometimes in older projects it might be called `include` or `inc`).
+When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency. In our projects they are stored within the `vl` folder.
 
-It is generally good practice to only store definitions like classes, records and process nodes inside file dependencies and not in the main VL file. The main VL file on the other hand does only call these operations on the application side, but does not store any definitions itself. Like that, we ensure modularity and exchangeability, and also open up for other contributors to projects via Git. 
+It is generally good practice to only store definitions like classes, records and process nodes inside file dependencies and not in the main VL file. The main VL file on the other hand does only call these operations on the application side, but does not store any definitions itself. Like that, we ensure modularity and exchangeability, and also open up for other contributors to projects. 
 
 https://thegraybook.vvvv.org/reference/best-practice/version-control.html#version-control-with-git
-
-### Basic State Controller
-
-Our VL.3e8 library contains an example for a basic state controller pattern, that can serve as a starting point. It is handy to follow a pattern like that from the very beginning to make sure the project is scalable later. 
 
 ### Using Package Repositores
 
