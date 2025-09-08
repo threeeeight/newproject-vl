@@ -3,7 +3,7 @@
 A template for VL projects, using a batch file opening a specific vvvv and NuGet environment.
 Set up for more complex and scalable projects with multiple collaborators.
 
-## Structure
+## Environment
 
 Every project contains a main VL file `NewProject.vl` and the main entry point `NewProject.bat`.
 
@@ -12,6 +12,8 @@ The batch file will set up the environment in vvvv specifically for the project,
 Doing so, vvvv will make sure that NuGets are always loaded from the project repository. Loading and storing them within the scope of a project from this folder will make sure that everybody working on the project uses the same NuGets and their versions.
 
 If the specific vvvv version can not be found on your computer, you need to download and install it manually ([Installing specific vvvv versions](https://www.notion.so/Installing-specific-vvvv-versions-25dffcf9f77580a0ba1bec3a0b7ef996?pvs=21)). Feel free to change the vvvv version in the batch file, if the project requires a different version. Just make sure that everybody working on the project is informed about this step and downloads the right version of vvvv.
+
+## Structure
 
 The template also contains some standard folders `assets` `nugets` `rnd` `vl` and an empty placeholder file inside of each if it is empty, so that it gets picked up by Git. The placeholder file can be safely deleted, also the folder itself if it is not to be used within the project.
 
