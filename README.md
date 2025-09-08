@@ -24,7 +24,7 @@ The template also contains some standard folders `assets` `nugets` `rnd` `vl` an
 
 After creating a new repository based on this template, you need to manually change the name of both the main VL file and the batch file to the name of the project. Also make sure to change the name of the main entry file inside of the batch file!
 
-### VL File Dependencies
+### VL file dependencies
 
 When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency.
 
@@ -34,7 +34,7 @@ https://thegraybook.vvvv.org/reference/best-practice/version-control.html#versio
 
 ## Advanced techniques 
 
-### Package Repositores / Git Submodules
+### Package repositores / Git submodules
 
 In case your project needs to use a VL library from source (often the case when using a fork of VL.Fuse in a project), please add them to a folder called `package-repositories` inside of your project and include it in the batch file. Don’t forget to add the libraries to the `--editable-packages` flag, otherwise they will be pre-compiled in your project. Afterwards use a Git client that supports submodules.
 
