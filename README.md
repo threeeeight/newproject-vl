@@ -1,4 +1,56 @@
-# New Project
+# New VL Project Template
 
 **vvvv version**: vvvv gamma 7.0<br>
 **Other pre-requisites**: None
+
+## Structure
+
+Every project contains a main VL file `NewProject.vl` and the main entry point `NewProject.bat`.
+
+The batch file will set up the whole VL environment specifically for the project, including the right vvvv version and the NuGet path inside of the project, and eventually open `NewProject.vl`. Therefore it is the file that should be opened everytime one is working on the project. 
+
+Doing so, vvvv will make sure that NuGets are always loaded from the project repository. Loading and storing them within the scope of a project from this folder will make sure that everybody working on the project uses the same NuGets and their versions.
+
+If the specific vvvv version can not be found on your computer, you need to download and install it manually ([Installing specific vvvv versions](https://www.notion.so/Installing-specific-vvvv-versions-25dffcf9f77580a0ba1bec3a0b7ef996?pvs=21)). Feel free to change the vvvv version in the batch file, if the project requires a different version. Just make sure that everybody working on the project is informed about this step and downloads the right version of vvvv.
+
+The template also contains some standard folders `assets` `nugets` `rnd` `vl` and an empty placeholder file inside of each if it is empty, so that it gets picked up by Git. The placeholder file can be safely deleted, also the folder itself if it is not to be used within the project.
+
+- `assets` should contain any files like images, videos, fonts that will be picked up and used by the VL application, and are not managed by an external asset provider. Please try to avoid huge files above 100MB, as this is the maximum file size in Git repositories. Files should be organized by their type, so feel free to create sub folders like `images` `videos` `fonts`.
+- `nugets` is the place where all NuGet dependencies will be saved and that is specified as the NuGet override folder in the batch file.
+- `rnd` should be used to save research and tests patches that were developed in the scope of a project and/or showcase several possible solutions, but are not part of the project itself. Just make sure that these files are also opened in the same version and that they are using the custom NuGet folder as the rest of the project.
+- `vl` contains VL file dependencies that are referenced and used by the project.
+
+### Setting up a new VL project
+
+To use the template, simply create a new repository by selecting the template in the creation process.
+
+![grafik.png](attachment:086fcd4c-f7e9-46be-8d7d-6a62c89282cb:grafik.png)
+
+Alternatively, you can also create the repository from the template repository by clicking on “Use this template”.
+
+![grafik.png](attachment:4fd9f12f-2d8b-4b15-97d0-87da77e5264d:grafik.png)
+
+**IMPORTANT:** After creating and cloning the repository to your machine, you need to manually change the name of both the main VL file and the batch file to the name of the project. Also make sure to change the name of the main entry file inside of the batch file!
+
+### VL File Dependencies
+
+When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency. In our projects they are stored within the `vl` folder (sometimes in older projects it might be called `include` or `inc`).
+
+It is generally good practice to only store definitions like classes, records and process nodes inside file dependencies and not in the main VL file. The main VL file on the other hand does only call these operations on the application side, but does not store any definitions itself. Like that, we ensure modularity and exchangeability, and also open up for other contributors to projects via Git. 
+
+https://thegraybook.vvvv.org/reference/best-practice/version-control.html#version-control-with-git
+
+### Basic State Controller
+
+Our VL.3e8 library contains an example for a basic state controller pattern, that can serve as a starting point. It is handy to follow a pattern like that from the very beginning to make sure the project is scalable later. 
+
+### Using Package Repositores
+
+In case your project needs to use one of our libraries from source or a custom fork of a VL library (often the case when using VL.Fuse in a project), please add them to a folder called `package-repositories` inside of your project and include it in the batch file. Don’t forget to add the libraries to the `--editable-packages` flag, otherwise they will be pre-compiled in your project.
+
+```jsx
+taskkill /f /im vvvv.exe
+timeout 3
+start "" "C:\Program Files\vvvv\vvvv_gamma_7.0-win-x64\vvvv.exe" --nuget-path "%~dp0nugets" --package-repositories "%~dp0package-repositories" --editable-packages VL.Fuse --open "%~dp0NewProject.vl"
+exit
+```
