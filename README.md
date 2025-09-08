@@ -1,5 +1,8 @@
 # New VL Project
 
+A template for VL projects, using a batch file opening a specific vvvv and NuGet environment.
+Set up for more complex and scalable projects with multiple collaborators.
+
 ## Structure
 
 Every project contains a main VL file `NewProject.vl` and the main entry point `NewProject.bat`.
