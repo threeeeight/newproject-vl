@@ -1,0 +1,13 @@
+# vvvv .v4p backup files
+*~.xml
+
+# vvvv .vl temp files
+.vl/
+
+# Dynamic plugins .dll
+/lib/
+bin/
+
+# Other
+obj/
+.vs/
