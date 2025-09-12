@@ -26,6 +26,8 @@ The template also contains some standard folders `assets` `nugets` `rnd` `vl` an
 
 After creating a new repository based on this template, you need to manually change the name of both the main VL file and the batch file to the name of the project. Also make sure to change the name of the main entry file inside of the batch file!
 
+## Advanced techniques
+
 ### VL file dependencies
 
 When working on a project, it might grow and get more complex, so it would make sense to split it into more file dependencies, that are picked up by the project. A file dependency in general is just a VL file containing definitions that can be used in the main project when setting a reference to the dependency.
@@ -33,8 +35,6 @@ When working on a project, it might grow and get more complex, so it would make 
 It is generally good practice to only store definitions like classes, records and process nodes inside file dependencies and not in the main VL file. The main VL file on the other hand does only call these operations on the application side, but does not store any definitions itself. Like that, we ensure modularity and exchangeability, and also open up for other contributors to projects. 
 
 https://thegraybook.vvvv.org/reference/best-practice/version-control.html#version-control-with-git
-
-## Advanced techniques 
 
 ### Package repositores / Git submodules
 
